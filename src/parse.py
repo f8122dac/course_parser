@@ -44,5 +44,5 @@ for t in map( fmt_tid, data):
         f.write(t['content'])
 
 with open('out/tiddlers/{}.tid'.format(dept), 'w') as f:
-    f.write("title: {}\ntags: [[Course Catalog]]\n".format(dept))
+    f.write("title: {}\ntags: [[Course Catalog]]\n{}".format(dept, fmt_type(None)))
 
